@@ -1,5 +1,7 @@
 package linkedList;
 
+import doublyLinkedList.Node;
+
 public class LinkedList {
 
 		Node head;
@@ -45,10 +47,10 @@ public class LinkedList {
 			head=x;
 			
 		}
-		public void deleteFromStrart(){
+		public void removeAtStart(){
 			head = head.getNext();
 		}
-		public void deleteFromEnd(){
+		public void removeAtEnd(){
 			Node temp = head;
 			Node secondLast = null;
 			
@@ -75,7 +77,7 @@ public class LinkedList {
 			
 			
 		}
-		public void deleteAtI(int index){
+		public void removeAtIth(int index){
 			int counter = 0,end=size()-1;
 			Node header = head;
 			Node pervious = null;
@@ -92,7 +94,7 @@ public class LinkedList {
 						break;
 					}
 					else {
-						deleteFromEnd();
+						removeAtEnd();
 					break;
 					}
 				}
@@ -125,17 +127,7 @@ public class LinkedList {
 		}
 		
 public static void main(String[] args){
-	LinkedList list = new LinkedList(new Node(5));
-	list.addAtEnd(new Node(3));
-	list.addAtEnd(new Node(2));
-	list.addAtEnd(new Node(1));
-	list.addAtEnd(new Node(6));
-	list.addAtEnd(new Node(7));
-	list.addAtEnd(new Node(8));
-	list.addAtEnd(new Node(9));
-	list.display();
-	list.deleteAtI(5);
-	list.display();
+
 	
 }
 

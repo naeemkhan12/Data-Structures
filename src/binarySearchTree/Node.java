@@ -3,6 +3,7 @@ package binarySearchTree;
 public class Node {
 	private Node left;
 	private Node right;
+	private int data;
 	public Node(){
 		
 	}
@@ -24,6 +25,15 @@ public class Node {
 		this.right = right;
 	}
 	
-	
+public int getData() {
+		return data;
+	}
+	public void setData(int data) {
+		this.data = data;
+	}
+@Override
+public String toString(){
+	return "Data: "+data;
+}
 
 }

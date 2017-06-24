@@ -111,7 +111,8 @@ public Node delete(Node pointer){
 	}
 	
 }
-
+public void heightOfTree(Node tree,int sum){
+}
 
 public Node deleteNode(Node root , int t){
 	if(root==null){
@@ -129,6 +130,14 @@ public Node deleteNode(Node root , int t){
 		return root;
 	}
 	
+}
+public static void main (String[] args){
+	BinarySearchTree tree = new BinarySearchTree(new Node(5));
+	tree.addNode(tree.getRoot(), 4);
+	tree.addNode(tree.getRoot(), 3);
+	tree.addNode(tree.getRoot(), 2);
+	tree.addNode(tree.getRoot(), 1);
+	tree.heightOfTree(tree.getRoot(),0);
 }
 
 }

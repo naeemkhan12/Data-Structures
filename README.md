@@ -9,7 +9,7 @@ Data-Structures
 + Binary Search Tree
 + AVL Tree
 + Heap
-> + Sorting
++ Sorting
 >
 > + Bucket Sort
 > + Counting Sort
